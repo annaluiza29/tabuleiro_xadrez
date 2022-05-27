@@ -1,0 +1,129 @@
+body{
+    background-color: #0b0b0723;
+}
+
+.tabuleiro{
+    top: 10px;
+    position: absolute;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.65);
+    display: flex;
+    z-index: -1;
+    border: 1px solid;
+    width: 640px;
+    height: 640px;
+}
+
+
+.box{
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+.black{
+    background-color: #000000;
+}
+
+.horse{
+    position: relative;
+    width: 80px;
+    top: 6px;
+    left: 80px;
+    animation: animacao 10s ease infinite;
+    z-index: 1;
+}
+
+
+@keyframes animacao{
+    0%{
+        top: 7px;
+        left: 80px;
+    }
+
+
+    6.25%{
+        top: 82px;
+        left: 80px;
+    }
+
+    12.5%{
+        top: 82px;
+        left: 240px;
+    }
+
+    18.75%{
+        top: 242px;
+        left: 240px;
+    }
+
+    25%{
+        top: 242px;
+        left: 320px;
+    }
+
+    31.25%{
+        top: 402px;
+        left: 320px;
+    }
+
+    37.5%{
+        top: 402px;
+        left: 400px;
+    }
+
+    43.75%{
+       top: 562px;
+       left: 400px;
+
+    }
+
+    50%{
+        top: 562px;
+        left: 480px;
+    }
+
+    56.25%{
+        top: 562px;
+        left: 400px;
+    }
+
+    62.5%{
+        top: 402px;
+        left: 400px;
+    }
+
+    68.75%{
+        top: 402px;
+        left: 320px;
+    }
+    
+    75%{
+        top: 242px;
+        left: 320px;
+    }
+
+    81.25%{
+        top: 242px;
+        left: 240px;
+    }
+
+    87.5%{
+        top: 82px;
+        left: 240px;
+    }
+
+    93.75%{
+        top: 82px;
+        left: 80px;
+    }
+
+    100%{
+        top: 7px;
+        left: 80px;
+    }
+}
+
+
